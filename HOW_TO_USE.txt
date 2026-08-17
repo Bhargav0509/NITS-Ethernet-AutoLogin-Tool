@@ -31,6 +31,9 @@ It might happen that you are connected to the correct network but it still shows
 2. Type `ipconfig /release` and press **Enter**.
 3. Type `ipconfig /renew` and press **Enter**.
 
+OR
+Just unplug the Ethernet cable then plug again . It should resolve the issue
+
 To fix this:
 Just double-click the "NITS_Ethernet_Autoconnect.exe" again! It will remember your username and password automatically. Just type in your newly assigned Ethernet Name, and your automation will be instantly fixed.
 
