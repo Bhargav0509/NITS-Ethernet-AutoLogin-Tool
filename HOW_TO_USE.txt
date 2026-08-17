@@ -6,7 +6,8 @@ WHAT THIS DOES:
 This tool automatically fixes the Windows "Unidentified Network" bug and logs you into the NITS captive portal in the background the moment you plug in your LAN cable.
 
 ===================================================
-NOTE : Download only the NITS_Ethernet_AutoConnect.exe no need to download the Install_NITS_Network.bat
+NOTE : Download only the NITS_Ethernet_AutoConnect.exe no need to download the Install_NITS_Network.bat. 
+(⚠️ THIS TOOL IS FOR WINDOWS ONLY. It will not work on Mac or Linux).
 ===================================================
 
 HOW TO INSTALL:
