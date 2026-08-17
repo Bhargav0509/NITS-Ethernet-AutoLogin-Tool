@@ -5,8 +5,12 @@
 WHAT THIS DOES:
 This tool automatically fixes the Windows "Unidentified Network" bug and logs you into the NITS captive portal in the background the moment you plug in your LAN cable.
 
+===================================================
+NOTE : Download only the NITS_Ethernet_AutoConnect.exe no need to download the Install_NITS_Network.bat
+===================================================
+
 HOW TO INSTALL:
-1. Double-click "NITS_AutoLogin_Installer.exe".
+1. Double-click "NITS_Ethernet_AutoConnect.exe".
 2. If Windows shows a blue "Protected your PC" screen, click "More info" -> "Run anyway". (This is normal for custom student tools!)
 3. Click "Yes" to grant Administrator permissions so it can set up the background tasks.
 4. Follow the black console window instructions: Type your NITS Username, Password, and your PC's Ethernet Name.
