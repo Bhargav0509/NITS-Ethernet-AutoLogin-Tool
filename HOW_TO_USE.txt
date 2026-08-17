@@ -22,8 +22,17 @@ You don't need to do anything. Just plug in your Ethernet cable and wait a few s
 IMPORTANT FIX (NETWORK RESET BUG):
 If your internet starts acting up months later and you use the Windows "Network Reset" button in your PC Settings, Windows will change your Ethernet name (e.g., to "Network 10") and break the automation. 
 
+===================================================
+If the tool still doesn't resolve it :
+===================================================
+**Manual Troubleshooting (If the automation doesn't work):**
+It might happen that you are connected to the correct network but it still shows "No internet", or it is not connecting to the desired network at all. In that case, you can manually force a reset to help the automation kick in:
+1. Press `Win + R`, type `cmd`, and press **Enter**.
+2. Type `ipconfig /release` and press **Enter**.
+3. Type `ipconfig /renew` and press **Enter**.
+
 To fix this:
-Just double-click the "NITS_AutoLogin_Installer.exe" again! It will remember your username and password automatically. Just type in your newly assigned Ethernet Name, and your automation will be instantly fixed.
+Just double-click the "NITS_Ethernet_Autoconnect.exe" again! It will remember your username and password automatically. Just type in your newly assigned Ethernet Name, and your automation will be instantly fixed.
 
 Is it safe?
 Yes. The complete source code is available on the GitHub repository for anyone to read. Your password never leaves your PC. 
