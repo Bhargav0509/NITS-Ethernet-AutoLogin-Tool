@@ -16,26 +16,62 @@ HOW TO INSTALL:
 4. Follow the black console window instructions: Type your NITS Username, Password, and your PC's Ethernet Name.
 5. Let it finish. You're done! 
 
-HOW TO USE IT:
-You don't need to do anything. Just plug in your Ethernet cable and wait a few seconds. The script works silently in the background. Note: If the college internet servers are down, this tool cannot bypass that.
-
-IMPORTANT FIX (NETWORK RESET BUG):
-If your internet starts acting up months later and you use the Windows "Network Reset" button in your PC Settings, Windows will change your Ethernet name (e.g., to "Network 10") and break the automation. 
+HOW TO USE IT (RUN IT ONLY ONCE!):
+You only need to run the .exe file ONCE. After that initial setup, you don't need to click anything ever again. Just plug in your Ethernet cable and wait a few seconds. The script works silently in the background forever. 
+Note: If the college internet servers are down, this tool cannot bypass that.
 
 ===================================================
-If the tool still doesn't resolve it :
+HOW TO MANUALLY STOP OR PAUSE THE AUTOMATION:
 ===================================================
-**Manual Troubleshooting (If the automation doesn't work):**
+Because this tool runs completely invisibly in the background, there is no app window to close. If you ever need to stop the script (e.g., if it gets stuck in a loop while you are trying to find a new network name), use one of these two methods:
+
+Method 1: The Quick Command (Fastest)
+1. Press Win + R, type cmd, and press Enter.
+2. To instantly kill a running loop, paste this and press Enter:
+   schtasks /End /TN "Network Automation"
+3. To pause it from running again, paste this and press Enter:
+   schtasks /Change /TN "Network Automation" /Disable
+
+Method 2: Task Scheduler (The Visual Way)
+1. Press Win + S, search for "Task Scheduler" and open it.
+2. Click "Task Scheduler Library" on the left.
+3. Find "Network Automation" in the list, right-click it, and click "End".
+4. Right-click it again and click "Disable". 
+(Note: To turn the automation back on later, just double-click your .exe installer again!)
+
+===================================================
+WHEN DO I NEED TO RUN AN .EXE AGAIN?
+===================================================
+You only ever need to run the installer again in two situations:
+
+1. THE NETWORK RESET BUG: 
+If your internet starts acting up months later and you use the Windows "Network Reset" button in PC Settings, Windows wipes its cache and creates a new profile name (e.g., "Network 2"). This breaks the automation.
+
+How to fix it:
+a. STOP THE SCRIPT: Follow the steps above to "Disable" the task so it doesn't keep disconnecting you while you test.
+b. FIND THE NEW NAME: Connect your cable and verify which profile actually connects to the college network.
+c. GET THE NAME: Go to PC Settings > Network & internet > Ethernet and check the exact name displayed under "Ethernet".
+d. RE-RUN THE .EXE: Double-click the installer again. It remembers your password—simply enter your new verified Ethernet name to restore and re-enable the automation.
+
+2. A CODE UPDATE:
+If the college updates their network portal, the old code will break. If a student updates the source code (.bat file) on GitHub to fix it, a brand new .exe file will be generated. You will need to download and run that *new* .exe once to apply the changes.
+
+===================================================
+IF THE TOOL STILL DOESN'T RESOLVE IT:
+===================================================
+Manual Troubleshooting (If the automation doesn't work):
 It might happen that you are connected to the correct network but it still shows "No internet", or it is not connecting to the desired network at all. In that case, you can manually force a reset to help the automation kick in:
-1. Press `Win + R`, type `cmd`, and press **Enter**.
-2. Type `ipconfig /release` and press **Enter**.
-3. Type `ipconfig /renew` and press **Enter**.
+1. Press Win + R, type cmd, and press Enter.
+2. Type: ipconfig /release and press Enter.
+3. Type: ipconfig /renew and press Enter.
 
 OR
-Just unplug the Ethernet cable then plug again . It should resolve the issue
+Just unplug the Ethernet cable then plug again. It should resolve the issue.
 
-To fix this:
-Just double-click the "NITS_Ethernet_Autoconnect.exe" again! It will remember your username and password automatically. Just type in your newly assigned Ethernet Name, and your automation will be instantly fixed.
+===================================================
+STILL CONFUSED?
+===================================================
+If any part of this guide seems too technical or hard to understand, don't worry! Just copy the section you are confused about and paste it into an AI like ChatGPT or Gemini. Ask it to "explain this simply," and it will break down the steps for you.
 
 Is it safe?
 Yes. The complete source code is available on the GitHub repository for anyone to read. Your password never leaves your PC. 
