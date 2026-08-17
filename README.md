@@ -19,7 +19,7 @@ The entire source code (`Install_NITS_Network.bat`) is uploaded right here in th
 
 ## 🚀 How to Install and Use
 
-1. Download the latest `NITS_AutoLogin_Installer.exe` from the **Releases** section.
+1. Download the latest `NITS_Ethernet_AutoConnect_Installer.exe` from the **Releases** section.
 2. Double-click the `.exe` file to run it.
 3. The setup will automatically request Administrator permissions (required to configure background network tasks).
 4. Follow the on-screen prompts to enter your **NITS Username**, **Password**, and your correct **Ethernet Name**.
@@ -28,7 +28,7 @@ The entire source code (`Install_NITS_Network.bat`) is uploaded right here in th
 ---
 
 ## 🔧 Troubleshooting: "Network Reset" Bug
-If you ever use the Windows "Network Reset" feature in your PC Settings, Windows will wipe its cache and change your Ethernet name (e.g., from `Network` to `Network 10`). 
+If you ever use the Windows "Network Reset" feature in your PC Settings, Windows will wipe its cache and might change your Ethernet name (e.g., from `Network` to `Network 10`). 
 
 If the auto-login stops working after a reset, **simply run the `.exe` installer again!** It will remember your saved username and password, and just ask you to type in your new Ethernet name to instantly fix the automation.
 
