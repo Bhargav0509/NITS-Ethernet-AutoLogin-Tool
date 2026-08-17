@@ -1,0 +1,27 @@
+===================================================
+  NIT SILCHAR AUTO-LOGIN TOOL - QUICK START GUIDE
+===================================================
+
+WHAT THIS DOES:
+This tool automatically fixes the Windows "Unidentified Network" bug and logs you into the NITS captive portal in the background the moment you plug in your LAN cable.
+
+HOW TO INSTALL:
+1. Double-click "NITS_AutoLogin_Installer.exe".
+2. If Windows shows a blue "Protected your PC" screen, click "More info" -> "Run anyway". (This is normal for custom student tools!)
+3. Click "Yes" to grant Administrator permissions so it can set up the background tasks.
+4. Follow the black console window instructions: Type your NITS Username, Password, and your PC's Ethernet Name.
+5. Let it finish. You're done! 
+
+HOW TO USE IT:
+You don't need to do anything. Just plug in your Ethernet cable and wait a few seconds. The script works silently in the background. Note: If the college internet servers are down, this tool cannot bypass that.
+
+IMPORTANT FIX (NETWORK RESET BUG):
+If your internet starts acting up months later and you use the Windows "Network Reset" button in your PC Settings, Windows will change your Ethernet name (e.g., to "Network 10") and break the automation. 
+
+To fix this:
+Just double-click the "NITS_AutoLogin_Installer.exe" again! It will remember your username and password automatically. Just type in your newly assigned Ethernet Name, and your automation will be instantly fixed.
+
+Is it safe?
+Yes. The complete source code is available on the GitHub repository for anyone to read. Your password never leaves your PC. 
+
+Share this tool with your batchmates to help everyone skip the login screen!
